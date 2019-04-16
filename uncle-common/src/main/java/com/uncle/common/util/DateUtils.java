@@ -1,6 +1,3 @@
-/**
- * Copyright：厦门科拓通讯技术股份有限公司 版权所有 违者必究 2015
- */
 package com.uncle.common.util;
 
 import java.text.ParseException;
