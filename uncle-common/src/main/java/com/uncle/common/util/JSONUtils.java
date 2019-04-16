@@ -9,10 +9,7 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.Map;
 
-/**
- * @author : 吴锋霖
- * @date: 2016/9/27
- */
+
 public class JSONUtils {
 
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper()
