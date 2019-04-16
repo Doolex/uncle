@@ -184,28 +184,7 @@ public final class ZipUtils {
 
 
 
-    public static void main(String[] args) {
-        String appCode = "bbb";
-        String version = "123";
-        String TEMPLATE_PATH = "E:\\keytop\\code\\kite\\kite-server\\02_web\\src\\main\\resources\\template";
-        String directoryName = "E:\\keytop\\code\\kite\\kite-server\\02_web\\src\\main\\resources\\temp\\" + appCode;
-        String path = "E:\\keytop\\code\\kite\\kite-server\\02_web\\src\\main\\resources\\template\\App.zip";
-        String path0 = "E:\\keytop\\code\\kite\\kite-server\\02_web\\src\\main\\resources\\temp\\App";
-//        ZipUtils.unZip(new File(path), path0);
-//        ZipUtils.zip(path0, path0 + "123.zip", false);
-
-        ZipUtils.unZip(new File(TEMPLATE_PATH + "/App.zip"), directoryName);
-
-        PropertiesHolder propertiesHolder = new PropertiesHolder(directoryName + "/app/app.ini");
-        propertiesHolder.update("AppCode", appCode);
-        propertiesHolder.update("AppName", appCode);
-        propertiesHolder.update("Version", version);
-        propertiesHolder.update("VersionDescription", "cesium");
-
-        FileUtils.writeTxtFile("11111", new File(directoryName + "/scripts/full/full.sql"));
-
-        ZipUtils.zip(directoryName, directoryName+".zip", false);
-    }
+   
 
 
 }
